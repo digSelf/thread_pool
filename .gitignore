@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# user definitions
+c_version/cmake-build-debug/

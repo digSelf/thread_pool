@@ -1,4 +1,4 @@
-# Install script for directory: /Users/alvin/Documents/workspace/cpp/thread_pool
+# Install script for directory: /Users/alvin/Documents/workspace/cpp/thread_pool/c_version
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/alvin/Documents/workspace/cpp/thread_pool/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/alvin/Documents/workspace/cpp/thread_pool/c_version/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

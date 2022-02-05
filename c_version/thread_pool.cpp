@@ -188,10 +188,17 @@ int thread_pool_destroy(thread_pool_t *pool)
     return 0;
 }
 
-int thread_pool_submit_task(thread_pool_t *pool, struct task_t *task)
+int thread_pool_submit_task(thread_pool_t *pool, struct task_t *task, bool is_backup)
 {
     pthread_mutex_lock(&pool->mutex);
 
+    if (is_backup)
+    {
+        auto *bak = new task_t;
+        assert(bak != nullptr);
+        memcpy(bak, task, sizeof(task_t));
+        task = bak;
+    }
     LIST_INSERT_AT_HEAD(task, pool->task_queue);
     pool->task_count_in_queue ++;
     pthread_cond_signal(&pool->cond);

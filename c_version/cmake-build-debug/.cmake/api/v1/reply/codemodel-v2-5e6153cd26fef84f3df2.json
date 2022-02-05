@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/alvin/Documents/workspace/cpp/thread_pool/cmake-build-debug",
-		"source" : "/Users/alvin/Documents/workspace/cpp/thread_pool"
+		"build" : "/Users/alvin/Documents/workspace/cpp/thread_pool/c_version/cmake-build-debug",
+		"source" : "/Users/alvin/Documents/workspace/cpp/thread_pool/c_version"
 	},
 	"version" : 
 	{
